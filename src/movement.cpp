@@ -841,10 +841,6 @@ ReturnValue MoveEvent::DeEquipItem(MoveEvent*, Player* player, Item* item, slots
 			}
 		}
 	}
-	
-	if (it.imbuingSlots > 0) {
-			g_events->eventPlayerOnDeEquipImbuement(player, item);
-    }
 
 	if (!it.abilities) {
 		return RETURNVALUE_NOERROR;
